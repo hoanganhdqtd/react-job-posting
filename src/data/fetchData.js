@@ -8,7 +8,6 @@ async function getJobs(page, q = null) {
   });
 
   await promise;
-  console.log(jobs.length);
 
   if (q) {
     let filtedJobs = jobs.filter(

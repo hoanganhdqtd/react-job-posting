@@ -37,9 +37,7 @@ function Home() {
     const fetch = async () => {
       const data = await api.getJobs(page, q);
       setJobs(data.jobs);
-      console.log("data", data);
       setPagesTotal(data.pagesTotal);
-      console.log("data.pagesTotal", data.pagesTotal);
     };
     fetch();
   }, [page, q]);
